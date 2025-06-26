@@ -1,71 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesozoic - Software Service Platform</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mesozoic.in – Smart Software Solutions</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background-color: #1a1a1a; color: white; padding: 20px; text-align: center; }
-    nav { background-color: #333; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    .hero { background-color: #111; color: white; text-align: center; padding: 80px 20px; }
-    .section { padding: 40px 20px; text-align: center; }
-    .services, .why { background-color: #f9f9f9; }
-    footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; }
-    img.logo { width: 120px; height: auto; margin-bottom: 10px; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #111;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+    header nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(to right, #ff0000, #000000);
+      color: white;
+      padding: 100px 30px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+    }
+    .hero p {
+      font-size: 1.3em;
+    }
+    .cta-button {
+      background-color: #fff;
+      color: #000;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    section {
+      padding: 60px 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.png" alt="Mesozoic Logo" class="logo">
-    <h1>Mesozoic</h1>
-    <p>Build your Web, App, or AI Ideas — We Make It Real</p>
+    <div><strong>Mesozoic.in</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <section class="hero">
+    <h1>Engineering Smart Software for the Digital Future</h1>
+    <p>At Mesozoic, we build intelligent tools that power businesses through innovation.</p>
+    <a href="#products" class="cta-button">Explore Our Solutions</a>
+  </section>
 
-  <div class="hero" id="home">
-    <h2>Your Vision, Our Code</h2>
-    <p>From simple websites to powerful AI systems, Mesozoic delivers it all.</p>
-  </div>
+  <section id="about">
+    <h2>Why Mesozoic?</h2>
+    <p>Founded in Frankfurt, built for the world – Mesozoic blends creativity with precision to develop software products that solve real business problems. From learning platforms to fintech solutions, we deliver what matters.</p>
+  </section>
 
-  <div class="section services" id="services">
-    <h2>Our Services</h2>
-    <p>✅ Custom Website Development</p>
-    <p>✅ Android & iOS App Development</p>
-    <p>✅ AI-Powered Tools & Chatbots</p>
-    <p>✅ E-Commerce & LMS Platforms</p>
-  </div>
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="card">
+        <h3>LMS Platform</h3>
+        <p>Smart learning tools for colleges and institutions.</p>
+      </div>
+      <div class="card">
+        <h3>LegalTech Assistant</h3>
+        <p>Digital productivity boosters for legal professionals.</p>
+      </div>
+      <div class="card">
+        <h3>SecureAuth</h3>
+        <p>Biometric and QR-based security solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Software</h3>
+        <p>Tailored software solutions for your unique business needs.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="section why">
-    <h2>Why Choose Mesozoic?</h2>
-    <p>✔️ End-to-End Development</p>
-    <p>✔️ Cost-Efficient & Scalable Solutions</p>
-    <p>✔️ Transparent Communication</p>
-    <p>✔️ Fast Delivery & Ongoing Support</p>
-  </div>
-
-  <div class="section" id="about">
-    <h2>About Us</h2>
-    <p>Mesozoic is a futuristic software service platform focused on helping individuals and businesses bring their digital ideas to life — websites, apps, AI tools, and more.</p>
-  </div>
-
-  <div class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: support@mesozoic.in</p>
-    <p>WhatsApp: +91-XXXXXXXXXX</p>
-    <p>Follow us on LinkedIn & Instagram</p>
-  </div>
+  <section id="contact">
+    <h2>Let’s Talk</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Mesozoic. All rights reserved.</p>
+    <p>© 2025 Mesozoic.in. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
